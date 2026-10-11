@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build universal binary
+        run: ./build.sh
+
+      - name: Verify architectures
+        run: |
+          lipo -info altdrag
+          lipo -info altdrag | grep -q arm64
+          lipo -info altdrag | grep -q x86_64
+
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: altdrag-universal
+          path: altdrag

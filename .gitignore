@@ -1,0 +1,8 @@
+# 构建产物
+altdrag
+altdrag-arm64
+altdrag-x86_64
+.build/
+
+# macOS
+.DS_Store
