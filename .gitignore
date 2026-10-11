@@ -1,7 +1,7 @@
-# 构建产物
-altdrag
-altdrag-arm64
-altdrag-x86_64
+# 构建产物（锚定根目录，避免误伤 Sources/AltDrag/）
+/altdrag
+/altdrag-arm64
+/altdrag-x86_64
 .build/
 
 # macOS
