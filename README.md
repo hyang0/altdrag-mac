@@ -17,6 +17,8 @@
 
 ## 构建
 
+不想自己编译？前往 [Releases](../../releases) 页面直接下载已编译好的 universal binary。
+
 ```bash
 ./build.sh
 ```
