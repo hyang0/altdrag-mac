@@ -9,6 +9,12 @@
 | `⌥ + 左键拖动` | 移动窗口 |
 | `右键拖动`（移动 > 5px 后触发） | 移动窗口，不干扰正常右键菜单 |
 
+## 系统要求
+
+- **运行**：macOS 12+（Monterey 及以后），Intel / Apple Silicon 均原生支持
+- **构建**：Xcode Command Line Tools（`xcode-select --install`），Swift 5.9+ 工具链；已验证 Swift 6.3.3 无警告编译
+- 源码最低可编译到 macOS 10.13 部署目标，但发布二进制统一以 macOS 12.0 为下限
+
 ## 构建
 
 ```bash
